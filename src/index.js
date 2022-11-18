@@ -27,6 +27,7 @@ const cards = [
 
 const memoryGame = new MemoryGame(cards);
 
+
 window.addEventListener('load', (event) => {
   let html = '';
   memoryGame.cards.forEach((pic) => {
@@ -45,7 +46,16 @@ window.addEventListener('load', (event) => {
   document.querySelectorAll('.card').forEach((card) => {
     card.addEventListener('click', () => {
       // TODO: write some code here
+      // add turned to card when clicked
+      card.classList.add("turned")
+      // if there are two cards turned, check pair
+      //add card to compare array
+      // 
       console.log(`Card clicked: ${card}`);
     });
   });
 });
+
+
+
+
