@@ -50,7 +50,6 @@ window.addEventListener('load', (event) => {
       // add turned to card when clicked
       card.classList.add("turned")
       // if there are two cards turned, check pair
-      //add card to compare array
       // 
       console.log(`Card clicked: ${card}`);
     });
