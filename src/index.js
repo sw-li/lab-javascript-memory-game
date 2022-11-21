@@ -78,9 +78,6 @@ window.addEventListener("load", (event) => {
 function winGame(){
   const winGame = document.createElement("h2")
   winGame.innerHTML = `You finised the game with ${memoryGame.pairsClicked} moves!`
+  winGame.style = "color:red;"
   document.getElementById("title").insertBefore(winGame, document.getElementById('restart-btn'))
-}
-
-function refreshPage(){
-  window.location.reload()
 }
